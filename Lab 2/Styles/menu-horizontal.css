@@ -1,0 +1,25 @@
+.menu a{
+    position: relative;
+    padding-left: 2.2rem;
+}
+
+.menu a:hover, .menu a:focus{
+    transform: translateY(-1px);
+}
+
+@keyframes titlePulse {
+    0% {
+        letter-spacing: normal;
+    }
+    50% {
+        letter-spacing: 1px;
+    }
+    100% {
+        letter-spacing: normal;
+    }
+}
+
+header h1 span{
+    display: inline-block;
+    animation: titlePulse 1s ease-in-out infinite;
+}
