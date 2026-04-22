@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UBBoabă - Meniu cu Sprite-uri</title>
+    <link rel="stylesheet" href="Styles/base.css">
+    <link rel="stylesheet" href="Styles/menu-horizontal.css">
+</head>
+<body>
+<header>
+    <h1>UBBoabă</h1>
+    <nav>
+        <ul class="menu">
+            <li class="menu-home"><a href="index_html5.html" target="_self" title="Pagina principală">Acasă</a></li>
+            <li class="menu-order"><a href="order_html5.html" target="_self" title="Formular de comandă">Comandă</a></li>
+            <li class="menu-news"><a href="menu_sprites_html5.html" target="_self" title="Pagina cu noutăți">Noutăți</a></li>
+            <li class="menu-widgets"><a href="widgets_html5.html" target="_self" title="Pagina cu widgeturi">Widgeturi</a></li>
+        </ul>
+    </nav>
+    <h2>Noutăți din cafenea</h2>
+</header>
+
+<main>
+    <section aria-labelledby="news-title">
+        <h3 id="news-title">Ce e nou săptămâna aceasta</h3>
+        <ul>
+            <li>A sosit un lot nou din Panama cu profil floral și note de yuzu.</li>
+            <li>În weekend oferim degustări ghidate pentru loturile light roast.</li>
+            <li>Pentru comenzi peste 200 lei, transportul local este gratuit.</li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="events-title">
+        <h3 id="events-title">Evenimente următoare</h3>
+        <ol>
+            <li>Marți: Introducere în metodele V60 și Chemex.</li>
+            <li>Joi: Cupping comparativ Columbia vs. Ethiopia.</li>
+            <li>Sâmbătă: Atelier "Alege roast-ul potrivit pentru tine".</li>
+        </ol>
+    </section>
+
+    <section aria-labelledby="feedback-newsletter">
+        <form id="feedback-newsletter-form" action="#" name="feedback_newsletter" class="feedback-newsletter">
+            <fieldset>
+                <legend><b>Trimite feedback sau înscrie-te la newsletter</b></legend>
+                <p>
+                    <label for="fb-name">Nume:</label><br>
+                    <input type="text" id="fb-name" name="fb-name" maxlength="40" required>
+                </p>
+                <p>
+                    <label for="fb-email">Email:</label><br>
+                    <input type="email" id="fb-email" name="fb-email" maxlength="40" required>
+                </p>
+                <p>
+                    <label for="fb-option">Opțiuni:</label><br>
+                    <select id="fb-option" name="fb-type" required>
+                        <option value="">Alege tipul</option>
+                        <option value="Newsletter">Newsletter</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="fb-type">Tip feedback/newsletter</label><br>
+                    <select id="fb-type" name="fb-type" required>
+                        <option value="">Alege tipul</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="fb-message">Mesaj:</label><br>
+                    <textarea id="fb-message" name="fb-message" rows="3" cols="50" required></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" id="fb-accept" name="fb-accept" required>
+                    <label for="fb-accept">Accept termenii și condițiile</label>
+                </p>
+                <p>
+                    <input type="submit" value="Trimite">
+                    <input type="reset" value="Resetează">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p><small>&copy; 2026 UBBoabă. Toate drepturile rezervate.</small></p>
+</footer>
+<script src="Scripts/dependencies-data.js"></script>
+<script src="Scripts/dependencies.js"></script>
+<script src="Scripts/validation.js"></script>
+</body>
+</html>

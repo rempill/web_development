@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UBBoabă - Acasă</title>
+    <link rel="stylesheet" href="Styles/base.css">
+    <link rel="stylesheet" href="Styles/responsive.css">
+    <link rel="stylesheet" href="Styles/carousel.css">
+    <link rel="stylesheet" href="Styles/tables.css">
+    <link rel="stylesheet" href="Styles/lists.css">
+</head>
+<body>
+
+<header>
+    <h1><span title="Cele mai bune boabe din oraș!">UBBoabă</span></h1>
+    <nav>
+        <ul class="menu">
+            <li class="menu-home"><a href="index_html5.html" target="_self" title="Pagina principală">Acasă</a></li>
+            <li class="menu-order"><a href="order_html5.html" target="_self" title="Formular de comandă">Comandă</a></li>
+            <li class="menu-news"><a href="menu_sprites_html5.html" target="_self" title="Pagina cu noutăți">Noutăți</a></li>
+            <li class="menu-widgets"><a href="widgets_html5.html" target="_self" title="Pagina cu widgeturi">Widgeturi</a></li>
+        </ul>
+    </nav>
+    <div id="carousel"></div>
+</header>
+
+<main>
+    <section aria-labelledby="menu-title">
+        <h2 id="menu-title">Meniul nostru, pe gustul vostru</h2>
+
+        <div id="classic-menu-table"></div>
+
+        <h3>Opțiuni Livrare</h3>
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">Metodă</th>
+                <th scope="col">Cost</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Ridicare din cafenea</td>
+                <td>Gratis + o cafea din partea noastră</td>
+            </tr>
+            <tr>
+                <td>Livrare in Municipiul Cluj-Napoca</td>
+                <td>5 lei</td>
+            </tr>
+            <tr>
+                <td>Livrare în afara Municipiului Cluj-Napoca</td>
+                <td>20 lei</td>
+            </tr>
+            <tr>
+                <td>Livrare în afara țării</td>
+                <td>Calculat la momentul plasării unei comenzi</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section aria-labelledby="compare-title">
+        <h2 id="compare-title">Comparație rapidă loturi</h2>
+        <div id="vertical-comparison-table"></div>
+    </section>
+
+    <section aria-labelledby="hours-title">
+        <h2 id="hours-title">Programul nostru</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">Zi</th>
+                <th scope="col">Interval</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Luni - Vineri</th>
+                <td>07:00 - 22:00</td>
+            </tr>
+            <tr>
+                <th scope="row">Sâmbătă</th>
+                <td>08:00 - 23:00</td>
+            </tr>
+            <tr>
+                <th scope="row">Duminică</th>
+                <td>09:00 - 21:00</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section aria-labelledby="about-title">
+        <h2 id="about-title">Despre Noi și Boabe</h2>
+        <div id="nested-about-list"></div>
+    </section>
+
+    <section aria-labelledby="location-title">
+        <h2 id="location-title">Locația noastră</h2>
+        <p><strong>Adresă:</strong> Strada Stradă, Nr. 67, Târgu Cărbunești, România</p>
+        <p><strong>Telefon:</strong> <span title="Număr de telefon">0767676767</span></p>
+    </section>
+</main>
+
+<footer>
+    <p><small>&copy; 2026 UBBoabă. Toate drepturile rezervate.</small></p>
+</footer>
+<script src="Scripts/carousel-data.js"></script>
+<script src="Scripts/carousel.js"></script>
+<script src="Scripts/tables-data.js"></script>
+<script src="Scripts/tables.js"></script>
+<script src="Scripts/lists-data.js"></script>
+<script src="Scripts/lists.js"></script>
+</body>
+</html>

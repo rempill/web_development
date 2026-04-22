@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UBBoabă - Comandă</title>
+    <link rel="stylesheet" href="Styles/base.css">
+    <link rel="stylesheet" href="Styles/menu-horizontal.css">
+    <link rel="stylesheet" href="Styles/creative.css">
+</head>
+<body>
+<header>
+    <h1><span title="Cele mai bune boabe din oraș!">UBBoabă</span></h1>
+    <nav>
+        <ul class="menu">
+            <li class="menu-home"><a href="index_html5.html" target="_self" title="Pagina principală">Acasă</a></li>
+            <li class="menu-order"><a href="order_html5.html" target="_self" title="Formular de comandă">Comandă</a></li>
+            <li class="menu-news"><a href="menu_sprites_html5.html" target="_self" title="Pagina cu noutăți">Noutăți</a></li>
+            <li class="menu-widgets"><a href="widgets_html5.html" target="_self" title="Pagina cu widgeturi">Widgeturi</a></li>
+        </ul>
+    </nav>
+    <h2>Formular de Comandă</h2>
+</header>
+
+<main>
+    <section>
+        <h3>Plasează o comandă</h3>
+
+        <form id="order-form" action="#" name="formular_comanda" class="order-form">
+            <fieldset>
+                <legend><b>Datele dumneavoastră</b></legend>
+                <p>
+                    <b>Nume:</b><br>
+                    <input type="text" name="nume" size="30" maxlength="50" value="" title="Introduceți numele" required>
+                </p>
+                <p>
+                    <b>Prenume:</b><br>
+                    <input type="text" name="prenume" size="30" maxlength="50" title="Introduceți prenumele" required>
+                </p>
+                <p>
+                    <b>Telefon:</b><br>
+                    <input type="text" name="telefon" size="20" maxlength="15" title="Introduceți numărul de telefon" required>
+                </p>
+                <p>
+                    <label for="county"><b>Județ:</b></label><br>
+                    <select name="county" id="county" required>
+                        <option value="">Alege județul</option>
+                        <option value="Cluj">Cluj</option>
+                        <option value="Bucuresti">București</option>
+                        <option value="Timis">Timiș</option>
+                        <option value="Iasi">Iași</option>
+                        <option value="Brasov">Brașov</option>
+                        <option value="Constanta">Constanța</option>
+                        <option value="Bihor">Bihor</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="city"><b>Oraș:</b></label><br>
+                    <select id="city" name="city" required>
+                        <option value="">Alege orașul</option>
+                    </select>
+                </p>
+                <p>
+                    <b>Adresă:</b><br>
+                    <input type="text" name="adresa" size="50" maxlength="100" title="Introduceți adresa de livrare" required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><b>Alegeți boabele</b></legend>
+                <p>
+                    <b>Selecția de boabe:</b><br>
+                    <select name="nume_boabe" size="4" multiple title="Puteți selecta mai multe sortimente" required>
+                        <option value="col_horta">Columbia Horta</option>
+                        <option value="col_eldiviso">Colombia El Diviso</option>
+                        <option value="pan_mounttotumasrosasvioleta">Panama Mount Totumas Rosas Violeta</option>
+                    </select>
+                </p>
+                <p>
+                    <b>Nivel Prăjire (Roast)</b><br>
+                    <select name="adaosuri" size="1" title="Alegeți nivelul de prăjire">
+                        <option value="blonde">Blonde (Light-)</option>
+                        <option value="cinnamon">Cinnamon (Light)</option>
+                        <option value="medium_light">Medium Light</option>
+                        <option value="city" selected>City (Medium)</option>
+                        <option value="fullcity">Full City (Medium+)</option>
+                        <option value="espresso">Espresso (Medium-Dark)</option>
+                        <option value="italian">Italian (Dark)</option>
+                    </select>
+                </p>
+                <p>
+                    <b>Gramaj:</b><br>
+                    <input type="radio" name="gramaj" value="250" checked> 250g
+                    <input type="radio" name="gramaj" value="500"> 500g
+                    <input type="radio" name="gramaj" value="1000"> 1kg
+                </p>
+                <p>
+                    <b>Cantitate pungi:</b><br>
+                    <input type="number" name="cantitate" value="1" min="1" max="20" step="1" title="Număr de pungi (1–20)">
+                </p>
+                <p>
+                    <b>Cantitate (slider):</b><br>
+                    <input type="range" name="cantitate_slider" value="1" min="1" max="20" step="1" title="Alegeți între 1 și 20">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><b>Opțiuni suplimentare</b></legend>
+                <p>
+                    <b>Doresc:</b><br>
+                    <input type="checkbox" name="giftbox" value="da" checked> Cutie Cadou<br>
+                    <input type="checkbox" name="brief" value="da"> Brief boabe ( origine, ferma, proces, etc.)<br>
+                    <input type="checkbox" name="same_day" value="da"> Livrare în aceeași zi (doar comenzi plasate înainte de ora 12:00)
+                </p>
+                <p>
+                    <b>Mențiuni speciale (diacritice: ă, â, î, ș, ț, Ă, Â, Î, Ș, Ț):</b><br>
+                    <textarea name="mentiuni" cols="40" rows="4" title="Scrieți detalii pentru comandă">Nimic.</textarea>
+                </p>
+                <p>
+                    <b>Cod promoțional:</b><br>
+                    <input type="text" name="cod_promo" size="20" maxlength="10" disabled value="INDISPONIBIL" title="Momentan indisponibil">
+                </p>
+                <p>
+                    <b>Cod de fidelitate:</b><br>
+                    <input type="password" name="cod_fidel" size="20" maxlength="20" title="Introduceți codul de fidelitate">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <p>
+                <input type="submit" name="trimite" value="Trimite comanda">
+                <input type="reset" name="reseteaza" value="Resetează">
+            </p>
+        </form>
+        <div id="order-summary"></div>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>Cum să comandați?</h3>
+        <ol type="I">
+            <li>Completați formularul de mai sus</li>
+            <li>Verificați datele introduse</li>
+            <li>Apăsați butonul <strong>Trimite comanda</strong></li>
+            <li>Așteptați confirmarea prin SMS
+                <ul>
+                    <li>Veți primi un cod de confirmare</li>
+                    <li>Timpul estimat de preparare</li>
+                    <li>Prețul total al comenzii</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h3>Metodele de plată acceptate</h3>
+        <ol type="A" start="1">
+            <li>Numerar</li>
+            <li>Card bancar
+                <ol type="a">
+                    <li>Visa</li>
+                    <li>Mastercard</li>
+                    <li>American Express</li>
+                </ol>
+            </li>
+            <li>Plată mobilă</li>
+        </ol>
+    </section>
+</main>
+
+<footer>
+    <h4>Vă mulțumim că ați ales UBBoabă!</h4>
+    <p><small>&copy; 2026 Cafeneaua Aromă. Toate drepturile rezervate.</small></p>
+</footer>
+<script src="Scripts/dependencies-data.js"></script>
+<script src="Scripts/dependencies.js"></script>
+<script src="Scripts/validation.js"></script>
+<script src="Scripts/creative.js"></script>
+</body>
+</html>

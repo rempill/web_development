@@ -1,0 +1,22 @@
+/* creative.css: Styles for the live order summary */
+#order-summary {
+  background: #f9f6f2;
+  border: 1px solid #e0c9a6;
+  border-radius: 8px;
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  color: #7a4b2e;
+  font-size: 1.1em;
+}
+#order-summary h3 {
+  margin-top: 0;
+  color: #b26c43;
+}
+#order-summary ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+#order-summary li {
+  margin-bottom: 0.3em;
+}
+
