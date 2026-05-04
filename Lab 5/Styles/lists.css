@@ -1,0 +1,27 @@
+/* lists.css: Styles for collapsible nested lists */
+ul, ol {
+  list-style: disc inside;
+  margin-left: 1.5em;
+}
+li.expandable {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+}
+li.expandable::before {
+  content: '\25B6';
+  display: inline-block;
+  margin-right: 0.5em;
+  transition: transform 0.2s;
+}
+li.expanded::before {
+  transform: rotate(90deg);
+}
+.nested {
+  display: none;
+  margin-left: 1.5em;
+}
+.nested.visible {
+  display: block;
+}
+

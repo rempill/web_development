@@ -1,0 +1,17 @@
+/* tables.css: Styles for sortable tables */
+th.sortable {
+  cursor: pointer;
+  position: relative;
+}
+th.sortable::after {
+  content: '\25B2\25BC';
+  font-size: 0.7em;
+  color: #b26c43;
+  margin-left: 0.3em;
+  opacity: 0.3;
+}
+th.sorted {
+  background: #ffe5c2;
+  color: #7a4b2e;
+}
+
